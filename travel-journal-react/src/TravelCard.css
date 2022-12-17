@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.card-container{
+  display: flex;
+  flex-direction: row; 
+  padding: 0px;
+  justify-content: left; 
+  gap: 32px;
+  margin-bottom: 30px;
+  max-width: 1220px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.card-container img{
+  border-radius: 11px;
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.location-place{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.travel-info{
+  padding: 24px 0;
+}
+
+.title{
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 32px;
+}
+
+.date{
+  margin-bottom: 13px;
+}
+
+.card-container .small-icon{
+  width: 10px;
+  height: auto;
+  margin-right: 6.4px;
+}
+
+.location-place h6{
+  font-size: 16px;
+  font-weight: 400;
+  margin-right: 6.4px;
+}
+
+.location-place a{
+  color: grey;
+}
+
+@media only screen and (min-width: 277px) and (max-width:399px){
+  .main-container{
+    display: flex;
+    justify-content: center;
+  }
+  .card-container{
+    gap: 19px;
+    padding: 0 20px;
+    flex-direction: column;
+  }
+  .card-container .location-img{
+    border-radius: 8px;
+    width: 220px;
+    height: 140px;
+  }
+  .title{
+    font-size: 24px;
+    margin-bottom: 19px;
+  }
+  .description-paragraph{
+    font-size: 11px;
+  }
+  .location-place a{
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 400px) {
+  .card-container{
+    padding: 0 40px;
+    gap: 24px;
+  }
+  .card-container .location-img{
+    width: 120px;
+    height: 180px;
+  }
+  .title{
+    font-size: 16px;
+    margin-bottom: 13px;
+  }
+  .description-paragraph{
+    font-size: 10px;
+  }
+  .location-place a{
+    font-size: 10px;
+  }
+  .location-place h6{
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 822px) {
+  .location-place h6{
+    font-size: 12px;
+  }
+  .date{
+    font-size: 10px;
+  }
+  .location-place a{
+    font-size: 14px;
+  }
+  .description-paragraph{
+    font-size: 13px;
+  }
+  .card-container{
+    padding: 0 200px;
+  }
+  .card-container .location-img{
+    width: 160px;
+    height: 240px;
+  }
+  .title{
+    font-size: 20px;
+    margin-bottom: 22px;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .location-place h6{
+    font-size: 14px;
+  }
+  .date{
+    font-size: 12px;
+  }
+  .location-place a{
+    font-size: 14px;
+  }
+  .description-paragraph{
+    font-size: 15px;
+  }
+  .card-container{
+    padding: 0 300px;
+  }
+  .card-container .location-img{
+    width: 200px;
+    height: 280px;
+  }
+  .title{
+    font-size: 29px;
+    margin-bottom: 26px;
+  }
+}
